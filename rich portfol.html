@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>G. ANDRIE RICHARD — Portfolio</title>
+  <meta name="description" content="Portfolio of G. Andrie Richard — B.Tech IT student, Java dev, IoT projects." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724; /* dark navy */
+      --card:#0b1220;
+      --muted:#94a3b8;
+      --accent:#06b6d4; /* teal */
+      --glass: rgba(255,255,255,0.04);
+      --glass-2: rgba(255,255,255,0.02);
+      --max-width:1100px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;color:#e6eef6;background:linear-gradient(180deg,#071025 0%,var(--bg) 100%);-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-decoration:none}
+    .wrap{max-width:var(--max-width);margin:40px auto;padding:32px}
+
+    /* Header */
+    header{display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,#06b6d4,#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:800;color:white}
+    .brand h1{font-size:18px;margin:0}
+    nav{display:flex;gap:14px;align-items:center}
+    nav a{padding:8px 12px;border-radius:8px;font-weight:600;color:var(--muted)}
+    nav a:hover{color:var(--accent);background:var(--glass)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start;margin-top:28px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:14px;padding:22px;box-shadow:0 6px 20px rgba(2,6,23,0.6);backdrop-filter: blur(6px)}
+    .intro h2{margin:0 0 8px;font-size:28px}
+    .intro p{margin:0;color:var(--muted);line-height:1.45}
+    .cta{margin-top:18px;display:flex;gap:12px}
+    .btn{background:linear-gradient(90deg,var(--accent),#7c3aed);border:none;color:#022;padding:10px 14px;border-radius:10px;font-weight:700;cursor:pointer}
+    .ghost{background:transparent;border:1px solid var(--glass);color:var(--muted);padding:10px 14px;border-radius:10px}
+
+    /* Contact card */
+    .contact-card{display:flex;flex-direction:column;gap:12px}
+    .meta{display:flex;gap:12px;align-items:center}
+    .meta svg{opacity:0.9}
+    .contact-item{font-weight:600;color:#cfeff6}
+    .socials{display:flex;gap:10px;margin-top:8px}
+
+    /* Sections */
+    section{margin-top:28px}
+    h3{margin:0 0 12px;font-size:18px}
+    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .pill{background:var(--glass-2);padding:8px 12px;border-radius:999px;font-weight:600;color:var(--muted)}
+
+    /* Projects */
+    .projects{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .project{padding:14px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), transparent);border:1px solid rgba(255,255,255,0.02)}
+    .project h4{margin:0 0 8px}
+    .project p{margin:0;color:var(--muted);font-size:14px}
+    .tags{margin-top:12px;display:flex;gap:8px;flex-wrap:wrap}
+
+    /* Footer */
+    footer{margin-top:40px;padding:18px 0;color:var(--muted);text-align:center}
+
+    /* Responsive */
+    @media (max-width:920px){
+      .hero{grid-template-columns:1fr}
+      .projects{grid-template-columns:1fr}
+      .grid-2{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo">GAR</div>
+        <div>
+          <h1>G. ANDRIE RICHARD</h1>
+          <div style="font-size:13px;color:var(--muted)">B.Tech (Information Technology) • Java | IoT | Web</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="card intro">
+          <h2>Hi — I’m <span style="color:var(--accent)">G. Andrie Richard</span></h2>
+          <p>
+            Passionate about technology-driven solutions with a solid foundation in Java. I enjoy learning new technologies, building practical projects (IoT & web) and solving problems.
+          </p>
+
+          <div class="cta">
+            <a class="btn" href="#contact">Hire / Contact</a>
+            <a class="ghost" href="/assets/Updated_Richard_Resume.pdf" download>Download Resume</a>
+          </div>
+
+          <section id="about" style="margin-top:18px">
+            <h3>Objective</h3>
+            <p style="color:var(--muted);line-height:1.5">“Passionate about Technology-driven solutions and has a solid foundation in Java. Enthusiastic in learning new technology and having a strong sense of problem-solving abilities.”</p>
+          </section>
+
+          <section id="skills">
+            <h3>Technical Skills</h3>
+            <div class="skills">
+              <span class="pill">Core Java</span>
+              <span class="pill">SQL</span>
+              <span class="pill">HTML & CSS</span>
+              <span class="pill">IoT (Sensors)</span>
+              <span class="pill">Git & GitHub</span>
+            </div>
+          </section>
+        </div>
+
+        <aside class="card contact-card">
+          <div style="font-size:13px;color:var(--muted)">Contact</div>
+          <div class="meta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 8v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <div class="contact-item">andrierichard03@gmail.com</div>
+            </div>
+          </div>
+
+          <div class="meta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 16.92V21a1 1 0 0 1-1.11 1A19 19 0 0 1 3 4.11 1 1 0 0 1 4 3h4.09a1 1 0 0 1 1 .75c.12.8.36 2.26.78 3.47a1 1 0 0 1-.24 1l-1.27 1.27a16 16 0 0 0 6.11 6.11l1.27-1.27a1 1 0 0 1 1-.24c1.21.42 2.67.66 3.47.78a1 1 0 0 1 .75 1z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <div class="contact-item">+91-8870079990</div>
+            </div>
+          </div>
+
+          <div class="meta">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16 8a6 6 0 1 1-8 0 6 6 0 0 1 8 0z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M2 20.5a10 10 0 0 1 20 0" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div style="font-size:13px;color:var(--muted)">Chennai, India</div>
+          </div>
+
+          <div class="socials">
+            <a class="ghost" href="https://www.linkedin.com/in/andrierichard03" target="_blank">LinkedIn</a>
+            <a class="ghost" href="https://github.com/Andreirichard03" target="_blank">GitHub</a>
+            <a class="ghost" href="mailto:andrierichard03@gmail.com">Email</a>
+          </div>
+        </aside>
+      </div>
+
+      <section id="projects" class="card">
+        <h3>Projects</h3>
+        <div class="projects">
+          <div class="project">
+            <h4>IoT-based Soil Fertility & Moisture Sensor</h4>
+            <p>Designed and implemented a sensor-based system to monitor soil moisture and fertility in real-time. The project showcased practical IoT application in precision farming and data monitoring.</p>
+            <div class="tags">
+              <span class="pill">IoT</span>
+              <span class="pill">Sensors</span>
+              <span class="pill">Real-time Monitoring</span>
+            </div>
+          </div>
+
+          <div class="project">
+            <h4>Library Management System</h4>
+            <p>Built a library management application to perform book CRUD, user management and transaction logging — focused on usability and core database operations.</p>
+            <div class="tags">
+              <span class="pill">Java</span>
+              <span class="pill">SQL</span>
+              <span class="pill">CRUD</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="card">
+        <h3>Education & Certifications</h3>
+        <div class="grid-2">
+          <div>
+            <h4>Panimalar Engineering College, Chennai</h4>
+            <div style="color:var(--muted);font-weight:600">B.Tech. — Information Technology (2022–2026)</div>
+            <div style="color:var(--muted);margin-top:6px">CGPA: 7.1 / 10</div>
+          </div>
+
+          <div>
+            <h4>School</h4>
+            <div style="color:var(--muted);font-weight:600">HSC — SBOA Matriculation Higher Secondary School (72.5%)</div>
+            <div style="color:var(--muted);font-weight:600;margin-top:6px">SSLC — SBOA Matriculation Higher Secondary School (69.4%)</div>
+          </div>
+        </div>
+
+        <div style="margin-top:12px">
+          <strong>Internship</strong>
+          <div style="color:var(--muted);margin-top:6px">Java Development Intern — CodSoft</div>
+        </div>
+
+        <div style="margin-top:12px">
+          <strong>Certifications</strong>
+          <ul style="color:var(--muted);margin:8px 0 0 18px">
+            <li>TCS iON — Applied Artificial Intelligence</li>
+            <li>Python for Beginners — Udemy</li>
+            <li>CSS, Bootstrap, JavaScript, and Python Stack Course — Udemy</li>
+          </ul>
+        </div>
+
+        <div style="margin-top:12px">
+          <strong>Achievement</strong>
+          <p style="color:var(--muted);margin:6px 0">Presented a paper on "IoT-based Soil Fertility and Moisture Monitoring System" demonstrating real-time agricultural soil analysis using IoT sensors.</p>
+        </div>
+
+        <div style="margin-top:12px">
+          <strong>Extracurricular</strong>
+          <p style="color:var(--muted);margin:6px 0">Member — Cyber Nexus Club</p>
+        </div>
+      </section>
+
+      <section id="contact" class="card">
+        <h3>Contact</h3>
+        <p style="color:var(--muted)">Looking for internship or entry-level roles in Full Stack / Java / IoT development. Feel free to reach out — I reply quickly.</p>
+        <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn" href="mailto:andrierichard03@gmail.com?subject=Opportunity%20for%20G.%20Andrie%20Richard">Email me</a>
+          <a class="ghost" href="https://www.linkedin.com/in/andrierichard03" target="_blank">Message on LinkedIn</a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      © <span id="year"></span> G. Andrie Richard — Built with ❤️ • <a href="#projects">See projects</a>
+    </footer>
+  </div>
+
+  <script>
+    // Small UI helpers
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        const t = document.querySelector(a.getAttribute('href'));
+        if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
+      });
+    });
+  </script>
+</body>
+</html>
